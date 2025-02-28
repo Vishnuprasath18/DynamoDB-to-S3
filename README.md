@@ -1,7 +1,5 @@
 # DynamoDB-to-S3
---Step by step Breakdown:
-Got it — let’s simplify this! We’ll create a basic task where data from a DynamoDB table automatically gets converted into a CSV and saved in an S3 bucket. No backups, no scheduling — just a simple export operation.  
-
+**Step by step Breakdown:**
 **Step 1: Set up the S3 bucket**  
 - Go to the S3 console → Create bucket → Name it `dynamodb-csv-export-bucket` (or any unique name)  
 - Leave all settings default → Create bucket  
@@ -46,5 +44,4 @@ Replace the default code with this:
 If you want the CSV to be updated every time data changes:  
 - Go to DynamoDB → Streams → Enable stream on the table  
 - Add a trigger in Lambda → Choose the DynamoDB stream  
-
-Let me know how this goes or if you want any tweaks! 🚀  
+ 
